@@ -10,24 +10,24 @@ module.exports = function(app){
     app.post('/api/friends', function(req, res){
         var newFriend = req.body;
         friends.push(newFriend);
+        return res.json(friends);
+        // var score = newFriend.scores;
+        // var pos = compareScore(score);
 
-        var score = newFriend.scores;
-        var pos = compareScore(score);
 
-
-        return res.json(friends[pos]);
+        // return res.json(friends[pos]);
     })
 }
 
-function compareScore(score){
-    var score = score;
-    console.log("New friend score" + score);
+// function compareScore(score){
+//     var score = score;
+//     console.log("New friend score" + score);
 
-    var userScore = 0;
-    var compScore = [];
+//     var userScore = 0;
+//     var compScore = [];
 
-    for (var i= 0; i < friends.length -1; i++){
-        
-    }
-}
+//     for (var i= 0; i < friends.length -1; i++){
+//         var 
+//     }
+// }
 
