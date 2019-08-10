@@ -12,5 +12,22 @@ module.exports = function(app){
         friends.push(newFriend);
 
         var score = newFriend.scores;
+        var pos = compareScore(score);
+
+
+        return res.json(friends[pos]);
     })
 }
+
+function compareScore(score){
+    var score = score;
+    console.log("New friend score" + score);
+
+    var userScore = 0;
+    var compScore = [];
+
+    for (var i= 0; i < friends.length -1; i++){
+        
+    }
+}
+
