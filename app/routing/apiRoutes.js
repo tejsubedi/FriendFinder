@@ -1,4 +1,3 @@
-var path = require("path");
 const math = require("mathjs")
 var Friends = require("../data/friends");
 
@@ -74,7 +73,6 @@ module.exports = function (app) {
         }
         
         return(pos);
-        //console.log("The compatible friend for you is" + Friends[pos].name, Friends[pos].photo);
     }
 
 
