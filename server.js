@@ -1,19 +1,25 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
+var express = require("express");
+var path = require("path");
 
-//Setting express app
+
+// Sets up the Express App
+// =============================================================
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-//set up express app to handle the data parsing
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+//app.use(express.static(path.join(__dirname, "/public")));
+require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 
-require('./app/routing/htmlRoutes')(app);
-require('./app/routing/apiRoutes')(app);
+//app.use(express.static(__dirname + "/public"));
+//const router2 = require("/app/routing/apiRoutes.js");
+//app.use("/",router2);
 
 
-app.listen(PORT, function() {
-    console.log("Server listening on: http://localhost: " + PORT);
+app.listen(PORT, function () {
+    // Log (server-side) when our server has started
+    console.log("Server listening on: http://localhost:" + PORT);
 });
