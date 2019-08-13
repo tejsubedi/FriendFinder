@@ -7,7 +7,7 @@ In this activity, I have developed a compatibility-based "FriendFinder" applicat
 
 
 # Technology Used
- **JavaScript, Node, NPM: express, mathjs, path**
+ **HTML,Bootstrap, Choosen CSS, jQuery,JavaScript, Node, NPM: express, mathjs, path**
 
 
 # Deployment
