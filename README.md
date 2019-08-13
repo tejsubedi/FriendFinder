@@ -11,8 +11,8 @@ In this activity, I have developed a compatibility-based "FriendFinder" applicat
 
 
 # Deployment
- The app has been deployed to Heroku and can access on the following link.
- Heroku: https://bcs-friendfinder.herokuapp.com/
- Github: https://github.com/tejsubedi/FriendFinder
+ The app has been deployed to Heroku and can access on the following link:
+ - Heroku: https://bcs-friendfinder.herokuapp.com/
+ - Github: https://github.com/tejsubedi/FriendFinder
 
 
